@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html data-wf-domain="www.corebridge.net" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoreBridge - Partner With Us</title>
+  <meta name="description" content="Partner with CoreBridge and connect your product to thousands of print shops, sign shops, and custom fabricators. Schedule a partnership review today.">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>WebFont.load({ google: { families: ["Inter:regular,500,600,700,800,900","Radio Canada Big:regular,500,600,700","IBM Plex Sans:100,200,300,regular,500,600,700"] }});</script>
+  <link href="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/css/corebridge-8f3a0c.webflow.shared.c0141e69f.css" rel="stylesheet" type="text/css">
+  <style>
+    body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; }
+
+    /* ── Partner page overrides ── */
+    .partner-hero {
+      background-image: linear-gradient(180deg, white, var(--base-color-brand--green-300));
+      padding-top: 10rem;
+      padding-bottom: 6rem;
+    }
+    .partner-hero .heading-2 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 3.5rem;
+      font-weight: 600;
+      line-height: 1.14;
+      letter-spacing: -.01em;
+      color: var(--text-color--text-primary);
+      margin-bottom: 1.5rem;
+    }
+    .partner-hero .text-size-large {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: var(--base-color-neutral--neutral-800);
+      max-width: 38rem;
+    }
+
+    /* Stats row */
+    .partner-stats {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .partner-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+    .partner-stat-number {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-color--text-primary);
+      line-height: 1;
+    }
+    .partner-stat-label {
+      margin-top: .5rem;
+      font-size: .875rem;
+      color: var(--base-color-neutral--neutral-600);
+      font-weight: 500;
+    }
+
+    /* Category cards */
+    .partner-category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+      gap: 1.5rem;
+    }
+    .partner-category-card {
+      background: var(--background-color--background-alternate);
+      border: 1px solid var(--border-color--border-primary);
+      border-radius: 1rem;
+      padding: 2rem 1.75rem;
+      overflow: hidden;
+      transition: box-shadow .3s, border-color .3s;
+      box-shadow: 0 1px 3px #0000000a;
+    }
+    .partner-category-card:hover {
+      border-color: var(--base-color-brand--green-600-primary);
+      box-shadow: 0 4px 16px #99ca3d1a;
+    }
+    .partner-category-card .cat-banner {
+      width: 100%;
+      height: 8rem;
+      object-fit: cover;
+      border-radius: .75rem .75rem 0 0;
+      margin: -2rem -1.75rem 1.25rem;
+      width: calc(100% + 3.5rem);
+    }
+    .partner-category-card .cat-icons {
+      display: flex;
+      gap: .5rem;
+      margin-bottom: 1rem;
+    }
+    .partner-category-card .cat-icons img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: .375rem;
+    }
+    .partner-category-card h6 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -.01em;
+      margin-bottom: .5rem;
+      text-align: left;
+      color: var(--text-color--text-primary);
+    }
+    .partner-category-card p {
+      font-size: .9375rem;
+      color: var(--base-color-neutral--neutral-600);
+      line-height: 1.6;
+      text-align: left;
+    }
+    .partner-category-footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 1rem;
+      color: var(--base-color-neutral--neutral-600);
+    }
+    .partner-category-footer a {
+      color: var(--base-color-brand--green-600-primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .partner-category-footer a:hover { text-decoration: underline; }
+
+    /* Value props on dark bg */
+    .partner-value-section {
+      background-color: var(--base-color-neutral--neutral-900);
+      color: var(--text-color--text-alternate);
+    }
+    .partner-value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      text-align: center;
+    }
+    .partner-value-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      background: #99ca3d1a;
+      border-radius: .875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin: 0 auto 1.25rem;
+    }
+    .partner-value-card h3 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: .75rem;
+    }
+    .partner-value-card p {
+      font-size: .9375rem;
+      color: var(--base-color-neutral--neutral-400);
+      line-height: 1.7;
+    }
+
+    /* Steps */
+    .partner-steps {
+      max-width: 44rem;
+      margin: 0 auto;
+      position: relative;
+    }
+    .partner-steps::before {
+      content: '';
+      position: absolute;
+      left: 1.625rem;
+      top: 2.5rem;
+      bottom: 2.5rem;
+      width: 2px;
+      background: var(--border-color--border-primary);
+    }
+    .partner-step {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      position: relative;
+    }
+    .partner-step-num {
+      flex-shrink: 0;
+      width: 3.25rem;
+      height: 3.25rem;
+      background: var(--base-color-brand--green-600-primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      z-index: 1;
+    }
+    .partner-step-content h3 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-color--text-primary);
+      margin-bottom: .5rem;
+    }
+    .partner-step-content p {
+      font-size: .9375rem;
+      color: var(--base-color-neutral--neutral-600);
+      line-height: 1.7;
+    }
+
+    /* Logo bar */
+    .partner-logos {
+      padding: 3.5rem 0;
+      border-top: 1px solid var(--border-color--border-primary);
+      border-bottom: 1px solid var(--border-color--border-primary);
+    }
+    .partner-logos-label {
+      text-align: center;
+      font-size: .8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--base-color-neutral--neutral-400);
+      margin-bottom: 1.75rem;
+    }
+    .partner-logos-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .partner-logo-img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: .5rem;
+      opacity: .8;
+      transition: opacity .2s, transform .2s;
+    }
+    .partner-logo-img:hover { opacity: 1; transform: scale(1.1); }
+
+    /* Form section */
+    .partner-form-section {
+      background-color: var(--base-color-neutral--neutral-900);
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    .partner-form-wrapper {
+      max-width: 38rem;
+      margin: 0 auto;
+    }
+    .partner-form-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .partner-form-header h2 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: .75rem;
+    }
+    .partner-form-header p {
+      font-size: 1.0625rem;
+      color: var(--base-color-neutral--neutral-400);
+      line-height: 1.7;
+    }
+    .partner-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .partner-form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .partner-form-group.full { grid-column: 1 / -1; }
+    .partner-form-group label {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--base-color-neutral--neutral-400);
+      margin-bottom: .375rem;
+    }
+    .partner-form-group label .opt {
+      font-weight: 400;
+      color: var(--base-color-neutral--neutral-500);
+      font-size: .75rem;
+    }
+    .partner-form-group input,
+    .partner-form-group textarea {
+      border: 1px solid var(--border-color--border-primary);
+      background-color: transparent;
+      border-radius: 1.375rem;
+      color: white;
+      padding: .625rem 1rem;
+      font-size: 1rem;
+      font-family: IBM Plex Sans, sans-serif;
+      line-height: 1.625;
+      transition: border-color .2s;
+      outline: none;
+      box-shadow: inset 0 -2px #0000001a;
+    }
+    .partner-form-group input::placeholder,
+    .partner-form-group textarea::placeholder {
+      color: var(--base-color-neutral--neutral-500);
+    }
+    .partner-form-group input:focus,
+    .partner-form-group textarea:focus {
+      border-color: var(--base-color-brand--green-600-primary);
+    }
+    .partner-form-group textarea {
+      resize: vertical;
+      min-height: 6rem;
+    }
+    .partner-form-submit {
+      margin-top: 2rem;
+    }
+    .partner-form-submit .button {
+      width: 100%;
+      justify-content: center;
+    }
+    .partner-form-links {
+      margin-top: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .partner-form-links a {
+      font-size: .8125rem;
+      color: var(--base-color-neutral--neutral-500);
+      text-decoration: none;
+    }
+    .partner-form-links a:hover { color: var(--base-color-brand--green-600-primary); }
+    .partner-form-success {
+      display: none;
+      text-align: center;
+      padding: 3rem 0;
+    }
+    .partner-form-success.show { display: block; }
+    .partner-form-success-check {
+      width: 4rem;
+      height: 4rem;
+      background: #99ca3d26;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 1.75rem;
+    }
+    .partner-form-success h3 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: .75rem;
+    }
+    .partner-form-success p {
+      font-size: .9375rem;
+      color: var(--base-color-neutral--neutral-400);
+      line-height: 1.7;
+    }
+    .partner-form-success a { color: var(--base-color-brand--green-600-primary); }
+
+    /* FAQ */
+    .partner-faq-list {
+      max-width: 44rem;
+      margin: 0 auto;
+    }
+    .partner-faq-item {
+      border-bottom: 1px solid var(--border-color--border-primary);
+    }
+    .partner-faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.5rem 0;
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-color--text-primary);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 1.4;
+    }
+    .partner-faq-q:hover { color: var(--base-color-brand--green-600-primary); }
+    .partner-faq-icon {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-left: 1rem;
+      transition: transform .2s;
+    }
+    .partner-faq-item.open .partner-faq-icon { transform: rotate(45deg); }
+    .partner-faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+    .partner-faq-a-inner {
+      padding-bottom: 1.5rem;
+      font-size: 1rem;
+      color: var(--base-color-neutral--neutral-600);
+      line-height: 1.7;
+    }
+    .partner-faq-item.open .partner-faq-a { max-height: 20rem; }
+
+    /* CTA banner */
+    .partner-cta-banner {
+      text-align: center;
+    }
+    .partner-cta-heading {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-color--text-primary);
+      margin-bottom: .75rem;
+    }
+    .partner-cta-sub {
+      font-size: 1.0625rem;
+      color: var(--base-color-neutral--neutral-600);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    /* Section label */
+    .partner-section-label {
+      font-family: IBM Plex Sans, sans-serif;
+      font-size: .8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--base-color-brand--green-600-primary);
+      margin-bottom: .75rem;
+      text-align: center;
+    }
+    .partner-section-heading {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -.01em;
+      color: var(--text-color--text-primary);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .partner-value-section .partner-section-heading { color: white; }
+    .partner-section-sub {
+      font-size: 1.0625rem;
+      color: var(--base-color-neutral--neutral-600);
+      text-align: center;
+      max-width: 38rem;
+      margin: 0 auto 3.5rem;
+      line-height: 1.7;
+    }
+    .partner-value-section .partner-section-sub {
+      color: var(--base-color-neutral--neutral-400);
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 991px) {
+      .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .partner-category-grid { grid-template-columns: repeat(2, 1fr); }
+      .partner-value-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .partner-hero .heading-2 { font-size: 2.5rem; }
+      .partner-logos-row { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    }
+    @media screen and (max-width: 767px) {
+      .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .partner-category-grid { grid-template-columns: 1fr; }
+      .partner-form-grid { grid-template-columns: 1fr; }
+      .partner-hero .heading-2 { font-size: 2rem; }
+      .partner-section-heading { font-size: 2rem; }
+    }
+    @media screen and (max-width: 479px) {
+      .nav_button-wrapper.hide-mobile-portrait { display: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- ── NAV (from corebridge.net) ── -->
+  <div class="fixed_navbar">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_component on-light w-nav">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="nav_container">
+            <div class="nav_right-container">
+              <a href="https://www.corebridge.net/" class="nav_brand w-nav-brand">
+                <img width="213" loading="lazy" alt="CoreBridge Logo" src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b2ea3b63f839724895ba_CoreBridge%20Dark%20Grey%20Logo.svg" class="nav_logo">
+              </a>
+              <div class="nav-vertical-line hide-tablet"></div>
+              <nav role="navigation" class="nav_menu-wrapper on-light w-nav-menu">
+                <div class="nav_menu-container">
+                  <a href="https://www.corebridge.net/feature" class="nav_menu_link w-nav-link">Feature</a>
+                  <a href="https://www.corebridge.net/pricing" class="nav_menu_link w-nav-link">Pricing</a>
+                  <a href="https://www.corebridge.net/about" class="nav_menu_link w-nav-link">About</a>
+                  <a href="#" class="nav_menu_link w-nav-link w--current">Partners</a>
+                  <a href="https://www.corebridge.net/blog" class="nav_menu_link w-nav-link">Blog</a>
+                  <a href="https://www.corebridge.net/contact" class="nav_menu_link w-nav-link">Contact</a>
+                </div>
+              </nav>
+            </div>
+            <div class="nav_left-container">
+              <div class="nav_button-wrapper hide-mobile-portrait">
+                <a href="https://www.corebridge.net/contact" class="button is-secondary is-small w-button">Schedule a Discovery Call</a>
+              </div>
+              <div class="nav_button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-wrapper">
+
+    <!-- ── HERO ── -->
+    <div class="padding-global partner-hero section-hero">
+      <div class="container-large">
+        <div style="max-width:42rem;">
+          <div class="margin-bottom margin-small">
+            <div class="label-wrapper"><div class="label is-outline"><div>Partnerships</div></div></div>
+          </div>
+          <h1 class="heading-2">Grow Your Business Inside the Platform That Runs Custom Manufacturing</h1>
+          <p class="text-size-large">CoreBridge connects your product to thousands of print shops, sign shops, and custom fabricators who already rely on us every day. Schedule a partnership review and find out if we're a fit.</p>
+          <div class="button-wrapper" style="margin-top:2.5rem;">
+            <a href="#partnership-form" class="button is-icon _3button w-inline-block">
+              <div class="icon-1x1-small w-embed"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div>
+              <div>Schedule a Partnership Review</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── STATS ── -->
+    <div class="background-color-alternate">
+      <div class="padding-global partner-stats">
+        <div class="container-large">
+          <div class="partner-stats-grid">
+            <div>
+              <div class="partner-stat-number">18</div>
+              <div class="partner-stat-label">Years in Business</div>
+            </div>
+            <div>
+              <div class="partner-stat-number">20,000+</div>
+              <div class="partner-stat-label">Users Daily</div>
+            </div>
+            <div>
+              <div class="partner-stat-number">58</div>
+              <div class="partner-stat-label">Countries Serviced</div>
+            </div>
+            <div>
+              <div class="partner-stat-number">70%+</div>
+              <div class="partner-stat-label">Of Major Franchise Networks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── WHO WE WORK WITH ── -->
+    <section>
+      <div class="padding-global padding-section-medium">
+        <div class="container-large">
+          <div class="partner-section-label">Who We Work With</div>
+          <h2 class="partner-section-heading">Built for Partners Who Serve Custom Manufacturers</h2>
+          <p class="partner-section-sub">If your product helps shops quote, produce, ship, manage, or get paid — there's a place for it inside CoreBridge.</p>
+          <div class="partner-category-grid">
+            <!-- Finance + Tax (CategoryType 1 & 12) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/Accounting.png" alt="Accounting, Finance & Tax" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/quickbooks_online_ico_80x80.png" alt="QuickBooks" title="QuickBooks">
+                <img src="assets/integrations/xero_ico_80x80.png" alt="Xero" title="Xero">
+                <img src="assets/integrations/corebridge_tax_lookup_ico_80x80.png" alt="CoreBridge Tax" title="CoreBridge Tax">
+                <img src="assets/integrations/taxjar_ico_80x80.png" alt="TaxJar" title="TaxJar">
+                <img src="assets/integrations/avalara_ico_80x80.png" alt="Avalara" title="Avalara">
+              </div>
+              <h6>Accounting, Finance & Tax</h6>
+              <p>Streamline financial tasks, automate bookkeeping, and stay tax-compliant across jurisdictions — so shops can focus on growing their business.</p>
+            </div>
+            <!-- Payment (CategoryType 10) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/Payment.png" alt="Payments & Processing" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/stripe_ico_80x80.png" alt="Stripe" title="Stripe">
+                <img src="assets/integrations/fiserv_us_ico_80x80.png" alt="Fiserv" title="Fiserv">
+                <img src="assets/integrations/nexio_ico_80x80.jpg" alt="Nexio" title="Nexio">
+              </div>
+              <h6>Payments & Processing</h6>
+              <p>Let shops accept online payments instantly and securely so they get paid faster.</p>
+            </div>
+            <!-- Calendar (CategoryType 8) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/Productivty_598387892.jpeg" alt="Calendars & Scheduling" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/google_calendar_ico_80x80.png" alt="Google Calendar" title="Google Calendar">
+                <img src="assets/integrations/microsoft_calendar_ico_80x80.png" alt="Microsoft Calendar" title="Microsoft Calendar">
+              </div>
+              <h6>Calendars & Scheduling</h6>
+              <p>Master the schedule with ease. Keep appointments organized, sync seamlessly across platforms, and give teams more time for what matters.</p>
+            </div>
+            <!-- Communication (CategoryType 2) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/Communication_351043917.jpeg" alt="Email & Productivity" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/gmail_ico_80x80.png" alt="Gmail" title="Gmail">
+                <img src="assets/integrations/microsoft_outlok_ico_80x80.png" alt="Outlook" title="Outlook">
+                <img src="assets/integrations/corebridge_file_management_ico_80x80.png" alt="CoreBridge File Management" title="CoreBridge File Management">
+              </div>
+              <h6>Email & Productivity</h6>
+              <p>Enhance conversations and stay connected. Manage messages, files, and documents effortlessly, collaborate in real time, and drive productivity across the team.</p>
+            </div>
+            <!-- Customer Engagement (CategoryType 4) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/CRM_485562787.jpeg" alt="Customer Engagement" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/listen360_ico_80x80.png" alt="Listen360" title="Listen360">
+                <img src="assets/integrations/loyalty_loop_ico_80x80.png" alt="LoyaltyLoop" title="LoyaltyLoop">
+              </div>
+              <h6>Customer Engagement</h6>
+              <p>Build stronger customer relationships. Automate feedback so shops can grow their business while focusing on delivering value.</p>
+            </div>
+            <!-- Suppliers (CategoryType 9) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/Vendor_805079335.jpeg" alt="Suppliers & Vendor Catalogs" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/sanmar_ico_80x80.png" alt="SanMar" title="SanMar">
+                <img src="assets/integrations/s&s_activewear_ico_80x80.png" alt="S&S Activewear" title="S&S Activewear">
+              </div>
+              <h6>Suppliers & Vendor Catalogs</h6>
+              <p>Simplify supplier management and streamline operations. Track supplies and maintain material availability effortlessly.</p>
+            </div>
+            <!-- Shipping (CategoryType 11) -->
+            <div class="partner-category-card">
+              <img src="assets/integrations/Destinations_336999096.jpeg" alt="Shipping & Logistics" class="cat-banner">
+              <div class="cat-icons">
+                <img src="assets/integrations/corebridge_shipping_ico_80x80.png" alt="CoreBridge Shipping" title="CoreBridge Shipping">
+              </div>
+              <h6>Shipping & Logistics</h6>
+              <p>Streamline shipping processes, automate order fulfillment, provide real-time rates, generate labels, and track shipments efficiently.</p>
+            </div>
+          </div>
+          <div class="partner-category-footer">
+            Don't see your category? We're always looking for partners who make shops more efficient. <a href="#partnership-form">Let's talk.</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY PARTNER ── -->
+    <section class="partner-value-section">
+      <div class="padding-global padding-section-medium">
+        <div class="container-large">
+          <div class="partner-section-label" style="color: var(--base-color-brand--green-400);">Why CoreBridge</div>
+          <h2 class="partner-section-heading">What a CoreBridge Partnership Looks Like</h2>
+          <p class="partner-section-sub">&nbsp;</p>
+          <div class="partner-value-grid">
+            <div class="partner-value-card">
+              <div class="partner-value-icon">📡</div>
+              <h3>Reach</h3>
+              <p>Get your product in front of 20,000+ daily users across print shops, sign shops, apparel decorators, and custom fabricators. CoreBridge is the platform they already use to run their business.</p>
+            </div>
+            <div class="partner-value-card">
+              <div class="partner-value-icon">⚙️</div>
+              <h3>Ecosystem</h3>
+              <p>CoreBridge manages the full workflow — estimates, orders, production, invoicing, and payments. Your integration plugs into a complete system, not a point solution.</p>
+            </div>
+            <div class="partner-value-card">
+              <div class="partner-value-icon">🛠️</div>
+              <h3>Support</h3>
+              <p>You won't build alone. CoreBridge provides a dedicated contact, technical documentation, and hands-on support to get your integration live and performing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHAT TO EXPECT ── -->
+    <section>
+      <div class="padding-global padding-section-medium">
+        <div class="container-large">
+          <div class="partner-section-label">The Process</div>
+          <h2 class="partner-section-heading">A Straightforward Process From Start to Launch</h2>
+          <p class="partner-section-sub">No surprises. Here's exactly how it works when you partner with CoreBridge.</p>
+          <div class="partner-steps">
+            <div class="partner-step">
+              <div class="partner-step-num">1</div>
+              <div class="partner-step-content">
+                <h3>Schedule a Review</h3>
+                <p>Fill out a short form and our partnerships team will reach out to set up an introductory call. No commitment, no pressure — just a conversation.</p>
+              </div>
+            </div>
+            <div class="partner-step">
+              <div class="partner-step-num">2</div>
+              <div class="partner-step-content">
+                <h3>Discovery Call</h3>
+                <p>We learn about your product. You learn about CoreBridge. We talk through customer overlap, goals, and whether there's a fit worth pursuing.</p>
+              </div>
+            </div>
+            <div class="partner-step">
+              <div class="partner-step-num">3</div>
+              <div class="partner-step-content">
+                <h3>Partnership Agreement</h3>
+                <p>If it makes sense for both sides, we work through the details — partnership structure, terms, and a plan for how we'll work together.</p>
+              </div>
+            </div>
+            <div class="partner-step">
+              <div class="partner-step-num">4</div>
+              <div class="partner-step-content">
+                <h3>Build & Integrate</h3>
+                <p>Your team gets API access, documentation, and a dedicated CoreBridge contact. We work alongside you to make sure the integration meets our shared standards.</p>
+              </div>
+            </div>
+            <div class="partner-step">
+              <div class="partner-step-num">5</div>
+              <div class="partner-step-content">
+                <h3>Go Live</h3>
+                <p>Your integration launches in the CoreBridge Marketplace and becomes available to our entire customer base. We help promote it and track performance together.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PARTNER LOGOS ── -->
+    <div class="background-color-alternate">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="partner-logos">
+            <div class="partner-logos-label">Trusted Integration Partners</div>
+            <div class="partner-logos-row">
+              <img src="assets/integrations/quickbooks_online_ico_80x80.png" alt="QuickBooks" class="partner-logo-img" title="QuickBooks">
+              <img src="assets/integrations/xero_ico_80x80.png" alt="Xero" class="partner-logo-img" title="Xero">
+              <img src="assets/integrations/stripe_ico_80x80.png" alt="Stripe" class="partner-logo-img" title="Stripe">
+              <img src="assets/integrations/fiserv_us_ico_80x80.png" alt="Fiserv" class="partner-logo-img" title="Fiserv">
+              <img src="assets/integrations/gmail_ico_80x80.png" alt="Gmail" class="partner-logo-img" title="Gmail">
+              <img src="assets/integrations/microsoft_outlok_ico_80x80.png" alt="Outlook" class="partner-logo-img" title="Outlook">
+              <img src="assets/integrations/google_calendar_ico_80x80.png" alt="Google Calendar" class="partner-logo-img" title="Google Calendar">
+              <img src="assets/integrations/sanmar_ico_80x80.png" alt="SanMar" class="partner-logo-img" title="SanMar">
+              <img src="assets/integrations/listen360_ico_80x80.png" alt="Listen360" class="partner-logo-img" title="Listen360">
+              <img src="assets/integrations/loyalty_loop_ico_80x80.png" alt="LoyaltyLoop" class="partner-logo-img" title="LoyaltyLoop">
+              <img src="assets/integrations/taxjar_ico_80x80.png" alt="TaxJar" class="partner-logo-img" title="TaxJar">
+              <img src="assets/integrations/avalara_ico_80x80.png" alt="Avalara" class="partner-logo-img" title="Avalara">
+              <img src="assets/integrations/corebridge_shipping_ico_80x80.png" alt="CoreBridge Shipping" class="partner-logo-img" title="CoreBridge Shipping">
+              <img src="assets/integrations/corebridge_file_management_ico_80x80.png" alt="CoreBridge File Management" class="partner-logo-img" title="CoreBridge File Management">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FORM ── -->
+    <section class="partner-form-section" id="partnership-form">
+      <div class="padding-global">
+        <div class="partner-form-wrapper">
+          <div class="partner-form-header">
+            <h2>Let's Talk About a Partnership</h2>
+            <p>Tell us about your company and what you're looking to do. Our partnerships team will follow up to schedule a review.</p>
+          </div>
+
+          <form id="partnerForm" class="partner-form-grid" onsubmit="handleSubmit(event)">
+            <div class="partner-form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+            </div>
+            <div class="partner-form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+            </div>
+            <div class="partner-form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+            </div>
+            <div class="partner-form-group">
+              <label for="phone">Phone Number <span class="opt">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+            </div>
+            <div class="partner-form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Acme Software" required>
+            </div>
+            <div class="partner-form-group">
+              <label for="website">Company Website <span class="opt">(optional)</span></label>
+              <input type="url" id="website" name="website" placeholder="https://company.com">
+            </div>
+            <div class="partner-form-group full">
+              <label for="description">How does your product help custom manufacturers?</label>
+              <textarea id="description" name="description" placeholder="Tell us what your product does and how it could help print shops, sign shops, or custom fabricators work better." required></textarea>
+            </div>
+            <div class="partner-form-group full">
+              <label for="notes">Anything else you'd like us to know? <span class="opt">(optional)</span></label>
+              <textarea id="notes" name="notes" placeholder="Existing customer overlap, timeline, specific goals — whatever is helpful."></textarea>
+            </div>
+            <div class="partner-form-submit full">
+              <button type="submit" class="button is-icon _3button w-inline-block" style="width:100%;border:none;">
+                <div class="icon-1x1-small w-embed"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div>
+                <div>Schedule a Partnership Review</div>
+              </button>
+            </div>
+          </form>
+
+          <div class="partner-form-success" id="formSuccess">
+            <div class="partner-form-success-check">✓</div>
+            <h3>Thank You</h3>
+            <p>Our partnerships team will be in touch to schedule your review. In the meantime, learn more about <a href="https://www.corebridge.net/feature">what CoreBridge does</a> or explore our <a href="https://www.corebridge.net/blog">latest insights</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="background-color-alternate">
+      <div class="padding-global padding-section-medium">
+        <div class="container-large">
+          <div style="text-align:center;margin-bottom:3rem;">
+            <h2 style="font-family:Radio Canada Big,sans-serif;font-size:2.5rem;font-weight:600;">Frequently Asked Questions</h2>
+          </div>
+          <div class="partner-faq-list">
+            <div class="partner-faq-item">
+              <button class="partner-faq-q" onclick="toggleFaq(this)">
+                How long does the partnership process take?
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963ffe_faq-icon.svg" alt="" class="partner-faq-icon">
+              </button>
+              <div class="partner-faq-a">
+                <div class="partner-faq-a-inner">It depends on the complexity of the integration, but most partners go from first call to live integration within a few months. We'll give you a realistic timeline during the discovery call.</div>
+              </div>
+            </div>
+            <div class="partner-faq-item">
+              <button class="partner-faq-q" onclick="toggleFaq(this)">
+                Is there a cost to become a partner?
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963ffe_faq-icon.svg" alt="" class="partner-faq-icon">
+              </button>
+              <div class="partner-faq-a">
+                <div class="partner-faq-a-inner">We'll discuss partnership structure and terms during the review process. Our goal is to find a model that works for both sides.</div>
+              </div>
+            </div>
+            <div class="partner-faq-item">
+              <button class="partner-faq-q" onclick="toggleFaq(this)">
+                What kind of technical support do you provide?
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963ffe_faq-icon.svg" alt="" class="partner-faq-icon">
+              </button>
+              <div class="partner-faq-a">
+                <div class="partner-faq-a-inner">You get API documentation, a sandbox environment, and a dedicated CoreBridge contact who works with your engineering team throughout the build.</div>
+              </div>
+            </div>
+            <div class="partner-faq-item">
+              <button class="partner-faq-q" onclick="toggleFaq(this)">
+                Do I need to be in the print or sign industry?
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963ffe_faq-icon.svg" alt="" class="partner-faq-icon">
+              </button>
+              <div class="partner-faq-a">
+                <div class="partner-faq-a-inner">Not necessarily. If your product serves custom manufacturers — whether that's accounting, payments, scheduling, shipping, or something else — we want to hear about it.</div>
+              </div>
+            </div>
+            <div class="partner-faq-item">
+              <button class="partner-faq-q" onclick="toggleFaq(this)">
+                What if my product only serves a niche within your customer base?
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963ffe_faq-icon.svg" alt="" class="partner-faq-icon">
+              </button>
+              <div class="partner-faq-a">
+                <div class="partner-faq-a-inner">That's fine. Some of our most valuable integrations serve specific workflows or industries. If it helps even a segment of our customers work better, it's worth exploring.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BOTTOM CTA ── -->
+    <div class="cta_component background-color-alternate">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="cta_content-wrapper background-color-gradient-1">
+            <div class="cta_content-component">
+              <div class="cta_header_wrapper">
+                <div class="margin-bottom margin-small">
+                  <div class="text-align-center">
+                    <h3 class="discovery-call-cta-heading">Ready to explore a partnership?</h3>
+                    <div class="text-block-7">Schedule a review and find out how your product fits inside the platform that powers custom manufacturing.</div>
+                  </div>
+                </div>
+                <div class="button-wrapper is-center">
+                  <div class="margin-top margin-large">
+                    <a href="#partnership-form" class="button is-icon is-cta w-inline-block">
+                      <div>Schedule a Partnership Review</div>
+                      <div class="icon-1x1-small w-embed"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f6a_CTA%20Overlay02.svg" loading="lazy" alt="" class="cta-overlay left">
+            <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f6a_CTA%20Overlay02.svg" loading="lazy" alt="" class="cta-overlay right">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER (from corebridge.net) ── -->
+  <div class="footer_component background-color-alternate">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="footer_content-wrapper">
+          <div class="footer_top-content-wrapper">
+            <div class="footer_left-content-wrapper">
+              <a href="https://www.corebridge.net/" class="footer_brand-logo w-inline-block">
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b2e9e6d20627fe458471_CoreBridge%20Dark%20Grey%20Icon.svg" loading="lazy" width="82" alt="" class="footer-logo">
+              </a>
+              <div class="footer_left-content-container">
+                <div class="footer_contact-info">
+                  <div class="text-size-small text-weight-medium text-color-primary">Contact:</div>
+                  <a href="mailto:support@corebridge.net" class="text-size-small text-weight-medium text-color-secondary">Support@CoreBridge.net</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer_right-content-wrapper">
+              <div class="footer_menu-wrapper">
+                <div class="text-size-small text-weight-medium">CoreBridge</div>
+                <a href="https://www.corebridge.net/" class="text-size-small footer-menu-text">Home</a>
+                <a href="https://www.corebridge.net/feature" class="text-size-small footer-menu-text">Features</a>
+                <a href="https://www.corebridge.net/pricing" class="text-size-small footer-menu-text">Pricing</a>
+                <a href="https://www.corebridge.net/about" class="text-size-small footer-menu-text">About</a>
+              </div>
+              <div class="footer_menu-wrapper">
+                <div class="text-size-small text-weight-medium">Contact</div>
+                <a href="https://www.corebridge.net/contact" class="text-size-small footer-menu-text">Contact Sales</a>
+                <a href="https://support.corebridge.net" class="text-size-small footer-menu-text">Contact Support</a>
+                <a href="#" class="text-size-small footer-menu-text" style="color:var(--base-color-brand--green-600-primary);">Partners</a>
+                <a href="#" class="text-size-small footer-menu-text">Terms of Service</a>
+              </div>
+              <div class="footer_menu-wrapper">
+                <div class="text-size-small text-weight-medium">Customer</div>
+                <a href="https://support.corebridge.net/" class="text-size-small footer-menu-text">CoreBridge Login</a>
+                <a href="https://support.corebridge.net/" class="text-size-small footer-menu-text">Help-Center</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom-content-wrapper">
+            <div class="text-size-small text-weight-medium text-color-secondary">© 2025 CoreBridge, Inc. All rights reserved.</div>
+            <div class="footer_social-grid">
+              <a href="https://www.facebook.com/" class="footer_social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f67_Facebook.svg" loading="lazy" alt="" class="footer-social"></a>
+              <a href="https://www.instagram.com/" class="footer_social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f64_Instagram.svg" loading="lazy" alt="" class="footer-social"></a>
+              <a href="https://x.com/home" class="footer_social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f63_X.svg" loading="lazy" alt="" class="footer-social"></a>
+              <a href="https://www.linkedin.com/" class="footer_social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f65_LinkedIn.svg" loading="lazy" alt="" class="footer-social"></a>
+              <a href="https://www.youtube.com/" class="footer_social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f66_Youtube.svg" loading="lazy" alt="" class="footer-social"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggleFaq(btn) {
+  var item = btn.parentElement;
+  var wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.partner-faq-item').forEach(function(i) { i.classList.remove('open'); });
+  if (!wasOpen) item.classList.add('open');
+}
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('partnerForm').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+}
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var t = document.querySelector(this.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+
+</body>
+</html>
