@@ -60,28 +60,11 @@ Same stat-callout style used on the homepage (large number + label):
 
 ---
 
-### Section: Who We Work With
+### ~~Section: Who We Work With~~ — REMOVED per executive feedback
 
-**Section Header:**
-> Built for Partners Who Serve Custom Manufacturers
-
-**Body:**
-> If your product helps shops quote, produce, ship, manage, or get paid — there's a place for it inside CoreBridge. We partner with companies across these categories:
-
-**Category cards** (4-column grid, each with a category banner image from `CATERGORY_BANNER_IMAGE_MAP` and inline 80×80 partner icons from `INTEGRATIONS_CARD_IMAGE_MAP_SMALL`):
-
-| Category | Integrations Shown | Description |
-|----------|-------------------|-------------|
-| Accounting, Finance & Tax | QuickBooks, Xero, CoreBridge Tax, TaxJar, Avalara | Streamline financials, automate bookkeeping, and stay tax-compliant. |
-| Payments & Processing | Stripe, Fiserv, Nexio | Accept online payments instantly and securely. |
-| Calendars & Scheduling | Google Calendar, Microsoft Calendar | Keep appointments organized and sync across platforms. |
-| Email & Productivity | Gmail, Outlook, CoreBridge File Management | Manage messages, files, and documents; collaborate in real time. |
-| Customer Engagement | Listen360, LoyaltyLoop | Automate feedback and build stronger customer relationships. |
-| Suppliers & Vendor Catalogs | SanMar, S&S Activewear | Track supplies and maintain material availability. |
-| Shipping & Logistics | CoreBridge Shipping | Automate fulfillment, real-time rates, labels, and tracking. |
-
-**Closing line:**
-> Don't see your category? We're always looking for partners who make shops more efficient. Let's talk.
+> *"I would not show any specific vendors or categories. That could be very limiting... better to keep that off entirely."*
+>
+> Category cards, integration icons, and partner logo bar have all been removed. May revisit once the integration catalog is larger.
 
 ---
 
@@ -127,20 +110,9 @@ Step-by-step visual flow (similar to the Import → Quote → Automate section o
 
 ---
 
-### Section: Social Proof / Trust
+### ~~Section: Social Proof / Trust (Logo Bar)~~ — REMOVED per executive feedback
 
-**Existing partner logos** (horizontal row of 80×80 icons from `end-web/src/assets/Images/integrations/`, wrapping on smaller screens):
-> QuickBooks | Xero | Stripe | Fiserv | Gmail | Outlook | Google Calendar | SanMar | Listen360 | LoyaltyLoop | TaxJar | Avalara | CoreBridge Shipping | CoreBridge File Management
-
-**Pull quote (optional — use if a vendor partner testimonial is available):**
-> "[Quote from an existing vendor partner about the experience working with CoreBridge]"
->
-> — Name, Title, Company
-
-**If no vendor testimonial is available yet, use the existing customer quote that's most relevant:**
-> "Having a system that ties estimating, job tracking, and production together has changed how we run the shop. We're faster, more efficient, and a lot less stressed."
->
-> — Stewart West, Owner, Sign Weave
+> Partner logos removed to avoid narrowing scope. Testimonial section can be added later if a vendor partner quote becomes available.
 
 ---
 
@@ -349,7 +321,8 @@ When this moves to production:
 | Nav placement | Both top nav and footer |
 | Response SLA | No specific commitment — "Our partnerships team will be in touch" |
 | Vendor testimonial | Skip for now |
-| Partner logos | Real 80×80 icons from codebase — 14 integrations shown in logo bar |
+| Partner logos | Removed — exec feedback: showing specific vendors/categories is limiting |
+| Categories section | Removed — exec feedback: avoid narrowing scope until integration catalog is larger |
 | Form location | Embedded at the bottom of the /partners page (single page) |
 | Format | Standalone HTML example — see `partners.html` |
 

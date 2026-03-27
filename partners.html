@@ -60,71 +60,6 @@
       font-weight: 500;
     }
 
-    /* Category cards */
-    .partner-category-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-      gap: 1.5rem;
-    }
-    .partner-category-card {
-      background: var(--background-color--background-alternate);
-      border: 1px solid var(--border-color--border-primary);
-      border-radius: 1rem;
-      padding: 2rem 1.75rem;
-      overflow: hidden;
-      transition: box-shadow .3s, border-color .3s;
-      box-shadow: 0 1px 3px #0000000a;
-    }
-    .partner-category-card:hover {
-      border-color: var(--base-color-brand--green-600-primary);
-      box-shadow: 0 4px 16px #99ca3d1a;
-    }
-    .partner-category-card .cat-banner {
-      width: 100%;
-      height: 8rem;
-      object-fit: cover;
-      border-radius: .75rem .75rem 0 0;
-      margin: -2rem -1.75rem 1.25rem;
-      width: calc(100% + 3.5rem);
-    }
-    .partner-category-card .cat-icons {
-      display: flex;
-      gap: .5rem;
-      margin-bottom: 1rem;
-    }
-    .partner-category-card .cat-icons img {
-      width: 2rem;
-      height: 2rem;
-      border-radius: .375rem;
-    }
-    .partner-category-card h6 {
-      font-family: Radio Canada Big, sans-serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-      letter-spacing: -.01em;
-      margin-bottom: .5rem;
-      text-align: left;
-      color: var(--text-color--text-primary);
-    }
-    .partner-category-card p {
-      font-size: .9375rem;
-      color: var(--base-color-neutral--neutral-600);
-      line-height: 1.6;
-      text-align: left;
-    }
-    .partner-category-footer {
-      text-align: center;
-      margin-top: 2.5rem;
-      font-size: 1rem;
-      color: var(--base-color-neutral--neutral-600);
-    }
-    .partner-category-footer a {
-      color: var(--base-color-brand--green-600-primary);
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .partner-category-footer a:hover { text-decoration: underline; }
-
     /* Value props on dark bg */
     .partner-value-section {
       background-color: var(--base-color-neutral--neutral-900);
@@ -208,38 +143,6 @@
       color: var(--base-color-neutral--neutral-600);
       line-height: 1.7;
     }
-
-    /* Logo bar */
-    .partner-logos {
-      padding: 3.5rem 0;
-      border-top: 1px solid var(--border-color--border-primary);
-      border-bottom: 1px solid var(--border-color--border-primary);
-    }
-    .partner-logos-label {
-      text-align: center;
-      font-size: .8125rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: var(--base-color-neutral--neutral-400);
-      margin-bottom: 1.75rem;
-    }
-    .partner-logos-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .partner-logo-img {
-      width: 3rem;
-      height: 3rem;
-      border-radius: .5rem;
-      opacity: .8;
-      transition: opacity .2s, transform .2s;
-    }
-    .partner-logo-img:hover { opacity: 1; transform: scale(1.1); }
 
     /* Form section */
     .partner-form-section {
@@ -465,14 +368,11 @@
     /* Responsive */
     @media screen and (max-width: 991px) {
       .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .partner-category-grid { grid-template-columns: repeat(2, 1fr); }
       .partner-value-grid { grid-template-columns: 1fr; gap: 3rem; }
       .partner-hero .heading-2 { font-size: 2.5rem; }
-      .partner-logos-row { flex-wrap: wrap; justify-content: center; gap: 1rem; }
     }
     @media screen and (max-width: 767px) {
       .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .partner-category-grid { grid-template-columns: 1fr; }
       .partner-form-grid { grid-template-columns: 1fr; }
       .partner-hero .heading-2 { font-size: 2rem; }
       .partner-section-heading { font-size: 2rem; }
@@ -568,96 +468,6 @@
       </div>
     </div>
 
-    <!-- ── WHO WE WORK WITH ── -->
-    <section>
-      <div class="padding-global padding-section-medium">
-        <div class="container-large">
-          <div class="partner-section-label">Who We Work With</div>
-          <h2 class="partner-section-heading">Built for Partners Who Serve Custom Manufacturers</h2>
-          <p class="partner-section-sub">If your product helps shops quote, produce, ship, manage, or get paid — there's a place for it inside CoreBridge.</p>
-          <div class="partner-category-grid">
-            <!-- Finance + Tax (CategoryType 1 & 12) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/Accounting.png" alt="Accounting, Finance & Tax" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/quickbooks_online_ico_80x80.png" alt="QuickBooks" title="QuickBooks">
-                <img src="assets/integrations/xero_ico_80x80.png" alt="Xero" title="Xero">
-                <img src="assets/integrations/corebridge_tax_lookup_ico_80x80.png" alt="CoreBridge Tax" title="CoreBridge Tax">
-                <img src="assets/integrations/taxjar_ico_80x80.png" alt="TaxJar" title="TaxJar">
-                <img src="assets/integrations/avalara_ico_80x80.png" alt="Avalara" title="Avalara">
-              </div>
-              <h6>Accounting, Finance & Tax</h6>
-              <p>Streamline financial tasks, automate bookkeeping, and stay tax-compliant across jurisdictions — so shops can focus on growing their business.</p>
-            </div>
-            <!-- Payment (CategoryType 10) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/Payment.png" alt="Payments & Processing" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/stripe_ico_80x80.png" alt="Stripe" title="Stripe">
-                <img src="assets/integrations/fiserv_us_ico_80x80.png" alt="Fiserv" title="Fiserv">
-                <img src="assets/integrations/nexio_ico_80x80.jpg" alt="Nexio" title="Nexio">
-              </div>
-              <h6>Payments & Processing</h6>
-              <p>Let shops accept online payments instantly and securely so they get paid faster.</p>
-            </div>
-            <!-- Calendar (CategoryType 8) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/Productivty_598387892.jpeg" alt="Calendars & Scheduling" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/google_calendar_ico_80x80.png" alt="Google Calendar" title="Google Calendar">
-                <img src="assets/integrations/microsoft_calendar_ico_80x80.png" alt="Microsoft Calendar" title="Microsoft Calendar">
-              </div>
-              <h6>Calendars & Scheduling</h6>
-              <p>Master the schedule with ease. Keep appointments organized, sync seamlessly across platforms, and give teams more time for what matters.</p>
-            </div>
-            <!-- Communication (CategoryType 2) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/Communication_351043917.jpeg" alt="Email & Productivity" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/gmail_ico_80x80.png" alt="Gmail" title="Gmail">
-                <img src="assets/integrations/microsoft_outlok_ico_80x80.png" alt="Outlook" title="Outlook">
-                <img src="assets/integrations/corebridge_file_management_ico_80x80.png" alt="CoreBridge File Management" title="CoreBridge File Management">
-              </div>
-              <h6>Email & Productivity</h6>
-              <p>Enhance conversations and stay connected. Manage messages, files, and documents effortlessly, collaborate in real time, and drive productivity across the team.</p>
-            </div>
-            <!-- Customer Engagement (CategoryType 4) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/CRM_485562787.jpeg" alt="Customer Engagement" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/listen360_ico_80x80.png" alt="Listen360" title="Listen360">
-                <img src="assets/integrations/loyalty_loop_ico_80x80.png" alt="LoyaltyLoop" title="LoyaltyLoop">
-              </div>
-              <h6>Customer Engagement</h6>
-              <p>Build stronger customer relationships. Automate feedback so shops can grow their business while focusing on delivering value.</p>
-            </div>
-            <!-- Suppliers (CategoryType 9) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/Vendor_805079335.jpeg" alt="Suppliers & Vendor Catalogs" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/sanmar_ico_80x80.png" alt="SanMar" title="SanMar">
-                <img src="assets/integrations/s&s_activewear_ico_80x80.png" alt="S&S Activewear" title="S&S Activewear">
-              </div>
-              <h6>Suppliers & Vendor Catalogs</h6>
-              <p>Simplify supplier management and streamline operations. Track supplies and maintain material availability effortlessly.</p>
-            </div>
-            <!-- Shipping (CategoryType 11) -->
-            <div class="partner-category-card">
-              <img src="assets/integrations/Destinations_336999096.jpeg" alt="Shipping & Logistics" class="cat-banner">
-              <div class="cat-icons">
-                <img src="assets/integrations/corebridge_shipping_ico_80x80.png" alt="CoreBridge Shipping" title="CoreBridge Shipping">
-              </div>
-              <h6>Shipping & Logistics</h6>
-              <p>Streamline shipping processes, automate order fulfillment, provide real-time rates, generate labels, and track shipments efficiently.</p>
-            </div>
-          </div>
-          <div class="partner-category-footer">
-            Don't see your category? We're always looking for partners who make shops more efficient. <a href="#partnership-form">Let's talk.</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ── WHY PARTNER ── -->
     <section class="partner-value-section">
       <div class="padding-global padding-section-medium">
@@ -733,33 +543,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ── PARTNER LOGOS ── -->
-    <div class="background-color-alternate">
-      <div class="padding-global">
-        <div class="container-large">
-          <div class="partner-logos">
-            <div class="partner-logos-label">Trusted Integration Partners</div>
-            <div class="partner-logos-row">
-              <img src="assets/integrations/quickbooks_online_ico_80x80.png" alt="QuickBooks" class="partner-logo-img" title="QuickBooks">
-              <img src="assets/integrations/xero_ico_80x80.png" alt="Xero" class="partner-logo-img" title="Xero">
-              <img src="assets/integrations/stripe_ico_80x80.png" alt="Stripe" class="partner-logo-img" title="Stripe">
-              <img src="assets/integrations/fiserv_us_ico_80x80.png" alt="Fiserv" class="partner-logo-img" title="Fiserv">
-              <img src="assets/integrations/gmail_ico_80x80.png" alt="Gmail" class="partner-logo-img" title="Gmail">
-              <img src="assets/integrations/microsoft_outlok_ico_80x80.png" alt="Outlook" class="partner-logo-img" title="Outlook">
-              <img src="assets/integrations/google_calendar_ico_80x80.png" alt="Google Calendar" class="partner-logo-img" title="Google Calendar">
-              <img src="assets/integrations/sanmar_ico_80x80.png" alt="SanMar" class="partner-logo-img" title="SanMar">
-              <img src="assets/integrations/listen360_ico_80x80.png" alt="Listen360" class="partner-logo-img" title="Listen360">
-              <img src="assets/integrations/loyalty_loop_ico_80x80.png" alt="LoyaltyLoop" class="partner-logo-img" title="LoyaltyLoop">
-              <img src="assets/integrations/taxjar_ico_80x80.png" alt="TaxJar" class="partner-logo-img" title="TaxJar">
-              <img src="assets/integrations/avalara_ico_80x80.png" alt="Avalara" class="partner-logo-img" title="Avalara">
-              <img src="assets/integrations/corebridge_shipping_ico_80x80.png" alt="CoreBridge Shipping" class="partner-logo-img" title="CoreBridge Shipping">
-              <img src="assets/integrations/corebridge_file_management_ico_80x80.png" alt="CoreBridge File Management" class="partner-logo-img" title="CoreBridge File Management">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- ── FORM ── -->
     <section class="partner-form-section" id="partnership-form">
