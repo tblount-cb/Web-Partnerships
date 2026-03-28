@@ -327,14 +327,30 @@
     }
     .partner-faq-item.open .partner-faq-a { max-height: 20rem; }
 
-    /* CTA feature list (staging pattern) */
+    /* Bottom CTA */
+    .partner-bottom-cta {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a2f 50%, #2d4a1e 100%);
+    }
+    .partner-bottom-cta-box {
+      text-align: center;
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .partner-bottom-cta-box h3 {
+      font-family: Radio Canada Big, sans-serif;
+      font-size: 2.25rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
     .cta-feature-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: .75rem 2rem;
       text-align: left;
       max-width: 32rem;
-      margin: 1.5rem auto 0;
+      margin: 0 auto;
     }
     .cta-feature-item {
       display: flex;
@@ -349,7 +365,7 @@
     .cta-feature-item span {
       font-size: .9375rem;
       font-weight: 500;
-      color: var(--text-color--text-alternate);
+      color: #cbd5e1;
     }
 
     /* Section label */
@@ -729,52 +745,40 @@
       </div>
     </section>
 
-    <!-- ── BOTTOM CTA (staging pattern with feature list) ── -->
-    <div class="cta_component background-color-alternate">
-      <div class="padding-global">
+    <!-- ── BOTTOM CTA ── -->
+    <section class="partner-bottom-cta">
+      <div class="padding-global" style="padding-top:5rem;padding-bottom:5rem;">
         <div class="container-large">
-          <div class="cta_content-wrapper background-color-gradient-1">
-            <div class="cta_content-component">
-              <div class="cta_header_wrapper">
-                <div class="margin-bottom margin-small">
-                  <div class="text-align-center">
-                    <h3 class="discovery-call-cta-heading">Ready to explore a partnership?</h3>
-                    <div class="cta-feature-list">
-                      <div class="cta-feature-item">
-                        <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>No-commitment partnership review</span>
-                      </div>
-                      <div class="cta-feature-item">
-                        <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>A straightforward process from call to launch</span>
-                      </div>
-                      <div class="cta-feature-item">
-                        <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>A dedicated CoreBridge team throughout</span>
-                      </div>
-                      <div class="cta-feature-item">
-                        <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>Your product in front of 20,000+ daily users</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button-wrapper is-center">
-                  <div class="margin-top margin-large">
-                    <a href="#partnership-form" class="button is-icon is-cta w-inline-block">
-                      <div>Schedule a Partnership Review</div>
-                      <div class="icon-1x1-small w-embed"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div>
-                    </a>
-                  </div>
-                </div>
+          <div class="partner-bottom-cta-box">
+            <h3>Ready to explore a partnership?</h3>
+            <div class="cta-feature-list">
+              <div class="cta-feature-item">
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
+                <span>No-commitment partnership review</span>
+              </div>
+              <div class="cta-feature-item">
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
+                <span>A straightforward process from call to launch</span>
+              </div>
+              <div class="cta-feature-item">
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
+                <span>A dedicated CoreBridge team throughout</span>
+              </div>
+              <div class="cta-feature-item">
+                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
+                <span>Your product in front of 20,000+ daily users</span>
               </div>
             </div>
-            <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f6a_CTA%20Overlay02.svg" loading="lazy" alt="" class="cta-overlay left">
-            <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/6893b0e50e204e6e98963f6a_CTA%20Overlay02.svg" loading="lazy" alt="" class="cta-overlay right">
+            <div style="margin-top:2rem;">
+              <a href="#partnership-form" class="button is-icon _3button w-inline-block" style="background-color:#99ca3d;color:white;border:none;border-radius:10rem;padding:.75rem 1.5rem;font-weight:600;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;">
+                <div>Schedule a Partnership Review</div>
+                <div style="width:1rem;height:1rem;" class="w-embed"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 </div>
 
