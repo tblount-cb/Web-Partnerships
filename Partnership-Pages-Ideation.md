@@ -18,7 +18,7 @@ Pulled from corebridge.net homepage, /feature, /about, /pricing, /contact, and /
 
 **CTA style:** "Schedule a Discovery Call" is the primary CTA across the site. Secondary: "Get Started," "Try Now," "See the Results →"
 
-**Page structure pattern:** Hero (headline + 1-2 sentences + CTA) → Content sections (typically 3-column grids or step flows) → Social proof / stats → Testimonials → FAQ → Footer CTA ("Ready to connect your business operations?")
+**Page structure pattern:** Hero (headline + 1-2 sentences + CTA) → "What is CoreBridge" context line → Content sections (typically 3-column grids or step flows) → Social proof / stats → FAQ → Footer CTA ("Ready to connect your business operations?")
 
 **Stats used across the site:**
 - 18 years in business
@@ -57,6 +57,12 @@ Same stat-callout style used on the homepage (large number + label):
 | 20,000+ | Users Daily |
 | 58 | Countries Serviced |
 | 70%+ | Of Major Franchise Networks |
+
+---
+
+### Section: What is CoreBridge (context line)
+
+> CoreBridge is a business management platform built for print, sign, graphics, and apparel shops — connecting estimating, production, invoicing, and accounting in one system. Your integration reaches every part of how these businesses operate.
 
 ---
 
@@ -112,7 +118,7 @@ Step-by-step visual flow (similar to the Import → Quote → Automate section o
 
 ### ~~Section: Social Proof / Trust (Logo Bar)~~ — REMOVED per executive feedback
 
-> Partner logos removed to avoid narrowing scope. Testimonial section can be added later if a vendor partner quote becomes available.
+> Partner logos removed to avoid narrowing scope. Testimonial section removed — can be re-added later when a vendor partner quote becomes available.
 
 ---
 
