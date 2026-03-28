@@ -67,8 +67,8 @@
     }
     .partner-value-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
       text-align: center;
     }
     .partner-value-icon {
@@ -93,41 +93,6 @@
       font-size: .9375rem;
       color: #94a3b8;
       line-height: 1.7;
-    }
-
-    /* Outcomes */
-    .partner-outcomes-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-    }
-    .partner-outcome-card {
-      text-align: center;
-      padding: 2rem 1.25rem;
-    }
-    .partner-outcome-icon {
-      width: 3rem;
-      height: 3rem;
-      margin: 0 auto 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .partner-outcome-icon img {
-      width: 100%;
-      height: 100%;
-    }
-    .partner-outcome-card h6 {
-      font-family: Radio Canada Big, sans-serif;
-      font-size: 1.125rem;
-      font-weight: 600;
-      margin-bottom: .5rem;
-      color: var(--text-color--text-primary);
-    }
-    .partner-outcome-card p {
-      font-size: .875rem;
-      color: var(--base-color-neutral--neutral-600);
-      line-height: 1.6;
     }
 
     /* Steps */
@@ -424,13 +389,11 @@
     /* Responsive */
     @media screen and (max-width: 991px) {
       .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .partner-value-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .partner-outcomes-grid { grid-template-columns: repeat(2, 1fr); }
+      .partner-value-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
       .partner-hero .heading-2 { font-size: 2.5rem; }
     }
     @media screen and (max-width: 767px) {
       .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .partner-outcomes-grid { grid-template-columns: 1fr; }
       .partner-form-grid { grid-template-columns: 1fr; }
       .partner-hero .heading-2 { font-size: 2rem; }
       .partner-section-heading { font-size: 2rem; }
@@ -563,58 +526,22 @@
             <div class="partner-value-card">
               <div class="partner-value-icon">📡</div>
               <h3 style="color:white;">Reach</h3>
-              <p style="color:#94a3b8;">Get your product in front of 20,000+ daily users across print shops, sign shops, apparel decorators, and custom fabricators. CoreBridge is the platform they already use to run their business.</p>
+              <p style="color:#94a3b8;">Get your product in front of 20,000+ daily users across print shops, sign shops, apparel decorators, and custom fabricators — no cold outreach required. CoreBridge is the platform they already use to run their business.</p>
             </div>
             <div class="partner-value-card">
               <div class="partner-value-icon">⚙️</div>
               <h3 style="color:white;">Ecosystem</h3>
-              <p style="color:#94a3b8;">CoreBridge manages the full workflow — estimates, orders, production, invoicing, and payments. Your integration plugs into a complete system, not a point solution.</p>
+              <p style="color:#94a3b8;">CoreBridge manages the full workflow — estimates, orders, production, invoicing, and payments. Your integration lands in context, not in isolation.</p>
             </div>
             <div class="partner-value-card">
               <div class="partner-value-icon">🛠️</div>
               <h3 style="color:white;">Support</h3>
-              <p style="color:#94a3b8;">You won't build alone. CoreBridge provides a dedicated contact, technical documentation, and hands-on support to get your integration live and performing.</p>
+              <p style="color:#94a3b8;">You won't build alone. CoreBridge provides API docs, a sandbox environment, and a dedicated contact who works with your team from kickoff to launch.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── WHAT PARTNERS GET ── -->
-    <section class="background-color-alternate">
-      <div class="padding-global padding-section-medium">
-        <div class="container-large">
-          <div class="partner-section-label">Outcomes You Can Count On</div>
-          <h2 class="partner-section-heading">What Partners Get</h2>
-          <p class="partner-section-sub">A partnership with CoreBridge isn't just a listing — it's access, support, and results.</p>
-          <div class="partner-outcomes-grid">
-            <div class="partner-outcome-card">
-              <div class="partner-outcome-icon">
-                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-              </div>
-              <h6>Reach 20,000+ Daily Users</h6>
-              <p>Your product becomes accessible to the shops that already run their business on CoreBridge — no cold outreach required.</p>
-            </div>
-            <div class="partner-outcome-card">
-              <div class="partner-outcome-icon">
-                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-              </div>
-              <h6>Plug Into a Complete Workflow</h6>
-              <p>CoreBridge handles estimates, production, invoicing, and payments — your integration lands in context, not in isolation.</p>
-            </div>
-            <div class="partner-outcome-card">
-              <div class="partner-outcome-icon">
-                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-              </div>
-              <h6>Get Dedicated Support</h6>
-              <p>API docs, a sandbox environment, and a named CoreBridge contact who works with your team from kickoff to launch.</p>
-            </div>
-            <div class="partner-outcome-card">
-              <div class="partner-outcome-icon">
-                <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-              </div>
-              <h6>Launch in the Marketplace</h6>
-              <p>Go live in the CoreBridge Marketplace where customers discover, enable, and adopt new integrations on their own.</p>
+            <div class="partner-value-card">
+              <div class="partner-value-icon">🚀</div>
+              <h3 style="color:white;">Marketplace</h3>
+              <p style="color:#94a3b8;">Go live in the CoreBridge Marketplace where customers discover, enable, and adopt your integration on their own. We help promote it and track performance together.</p>
             </div>
           </div>
         </div>
@@ -815,19 +742,19 @@
                     <div class="cta-feature-list">
                       <div class="cta-feature-item">
                         <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>Access to 20,000+ daily users</span>
+                        <span>No-commitment partnership review</span>
                       </div>
                       <div class="cta-feature-item">
                         <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>Dedicated partnership support</span>
+                        <span>A straightforward process from call to launch</span>
                       </div>
                       <div class="cta-feature-item">
                         <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>API docs and sandbox access</span>
+                        <span>A dedicated CoreBridge contact throughout</span>
                       </div>
                       <div class="cta-feature-item">
                         <img src="https://cdn.prod.website-files.com/6893b0e50e204e6e98963ee7/68dafa1c5258f7d61862df2d_Simplicity.svg" alt="">
-                        <span>Launch in the Marketplace</span>
+                        <span>Your product in front of 20,000+ daily users</span>
                       </div>
                     </div>
                   </div>
