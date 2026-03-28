@@ -60,38 +60,6 @@
       font-weight: 500;
     }
 
-    /* Who partners — role cards */
-    .partner-roles-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-    .partner-role-card {
-      background: var(--background-color--background-alternate);
-      border: 1px solid var(--border-color--border-primary);
-      border-radius: 1rem;
-      padding: 2rem 1.75rem;
-      transition: box-shadow .3s, border-color .3s;
-      box-shadow: 0 1px 3px #0000000a;
-    }
-    .partner-role-card:hover {
-      border-color: var(--base-color-brand--green-600-primary);
-      box-shadow: 0 4px 16px #99ca3d1a;
-    }
-    .partner-role-card h6 {
-      font-family: Radio Canada Big, sans-serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-      letter-spacing: -.01em;
-      margin-bottom: .5rem;
-      color: var(--text-color--text-primary);
-    }
-    .partner-role-card p {
-      font-size: .9375rem;
-      color: var(--base-color-neutral--neutral-600);
-      line-height: 1.7;
-    }
-
     /* Value props on dark bg */
     .partner-value-section {
       background-color: var(--base-color-neutral--neutral-900);
@@ -455,14 +423,12 @@
     /* Responsive */
     @media screen and (max-width: 991px) {
       .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .partner-roles-grid { grid-template-columns: 1fr 1fr; }
       .partner-value-grid { grid-template-columns: 1fr; gap: 3rem; }
       .partner-outcomes-grid { grid-template-columns: repeat(2, 1fr); }
       .partner-hero .heading-2 { font-size: 2.5rem; }
     }
     @media screen and (max-width: 767px) {
       .partner-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .partner-roles-grid { grid-template-columns: 1fr; }
       .partner-outcomes-grid { grid-template-columns: 1fr; }
       .partner-form-grid { grid-template-columns: 1fr; }
       .partner-hero .heading-2 { font-size: 2rem; }
@@ -584,43 +550,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ── WHO PARTNERS WITH COREBRIDGE ── -->
-    <section>
-      <div class="padding-global padding-section-medium">
-        <div class="container-large">
-          <div class="partner-section-label">Who Partners With Us</div>
-          <h2 class="partner-section-heading">Built for Partners Who Serve Custom Manufacturers</h2>
-          <p class="partner-section-sub">If your product helps shops quote, produce, ship, manage, or get paid — there's a place for it inside CoreBridge.</p>
-          <div class="partner-roles-grid">
-            <div class="partner-role-card">
-              <h6>Software Companies</h6>
-              <p>You build tools that businesses rely on daily — accounting, payments, scheduling, or communications. CoreBridge gives you a direct channel to thousands of shops already managing their entire workflow in one platform.</p>
-            </div>
-            <div class="partner-role-card">
-              <h6>Service Providers</h6>
-              <p>You offer services that make shops more efficient — shipping, tax compliance, customer feedback, or business analytics. Plug into the system shops already use so your service is part of the workflow, not an afterthought.</p>
-            </div>
-            <div class="partner-role-card">
-              <h6>Industry Suppliers</h6>
-              <p>You supply the materials shops need to produce — substrates, apparel, hardware, or consumables. Make your catalog accessible right where shops build quotes and place orders.</p>
-            </div>
-            <div class="partner-role-card">
-              <h6>Franchise Networks</h6>
-              <p>You operate or support multi-location custom manufacturing businesses. CoreBridge already powers 70%+ of major franchise networks — your tools can reach every location from a single integration.</p>
-            </div>
-            <div class="partner-role-card">
-              <h6>Technology Platforms</h6>
-              <p>You build platforms that extend business capability — AI, automation, file management, or design tools. CoreBridge's open architecture lets you connect where it counts.</p>
-            </div>
-            <div class="partner-role-card">
-              <h6>Consultants &amp; Resellers</h6>
-              <p>You advise shops on operations, technology, and growth. Recommending CoreBridge means recommending a platform that integrates with the tools your clients already depend on.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ── WHY PARTNER ── -->
     <section class="partner-value-section">
